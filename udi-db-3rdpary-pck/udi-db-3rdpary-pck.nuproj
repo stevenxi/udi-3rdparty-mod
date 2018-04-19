@@ -16,7 +16,7 @@
   <PropertyGroup>
     <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
   </PropertyGroup>
-  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <Import Project="..\NuProj\NuProj.props" Condition="Exists('..\NuProj\NuProj.props')" />
   <PropertyGroup Label="Configuration">
     <Id>udi_db_3rdpary_pck</Id>
     <Version>1.0.0</Version>
@@ -42,5 +42,5 @@
     <ProjectReference Include="..\EntityFramework.MappingAPI\EntityFramework.MappingAPI\EntityFramework.MappingAPI.Net45.csproj" />
     <ProjectReference Include="..\EntityFrameworkBulkInsert\EntityFramework.BulkInsert\EntityFramework.BulkInsert.csproj" />
   </ItemGroup>
-  <Import Project="$(NuProjPath)\NuProj.targets" />
+  <Import Project="..\NuProj\NuProj.targets" />
 </Project>
