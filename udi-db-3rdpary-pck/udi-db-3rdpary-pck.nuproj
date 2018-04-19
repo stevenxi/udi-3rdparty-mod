@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>6aa316e3-2c7e-455a-b60f-91e5af010e76</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>udi_db_3rdpary_pck</Id>
+    <Version>1.0.0</Version>
+    <Title>udi-db-3rdpary-pck</Title>
+    <Authors>steve</Authors>
+    <Owners>steve</Owners>
+    <Summary>udi-db-3rdpary-pck</Summary>
+    <Description>udi-db-3rdpary-pck</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>
+    </ProjectUrl>
+    <LicenseUrl>
+    </LicenseUrl>
+    <Copyright>Copyright © steve</Copyright>
+    <Tags>udi_db_3rdpary_pck</Tags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityFramework.Extended\EntityFramework.Extended\EntityFramework.Extended.csproj" />
+    <ProjectReference Include="..\EntityFramework.MappingAPI\EntityFramework.MappingAPI\EntityFramework.MappingAPI.Net45.csproj" />
+    <ProjectReference Include="..\EntityFrameworkBulkInsert\EntityFramework.BulkInsert\EntityFramework.BulkInsert.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
